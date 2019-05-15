@@ -70,18 +70,7 @@ Header
 */
 
 
-/* Temporary */
-
-header.site-header:before {
-    content: "Header: ";
-}
-
-
 /* Temp */
-
-header#site-header {
-    height: 156px;
-}
 
 
 /* Top Menu */
@@ -114,9 +103,38 @@ header#site-header {
 
 header#site-header {
     padding: 10px 0;
-    background-color: purple;
     color: #222;
     font-family: "Helvetica";
+    background-color: #bfbfbf;
+}
+
+
+/* 
+--------------------------------------------------------
+
+Navigation
+
+--------------------------------------------------------
+*/
+
+nav#main-navigation ul {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav#main-navigation ul li {
+    background-color: #ebebeb;
+    display: flex;
+    align-items: center;
+}
+
+nav#main-navigation ul li a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-align: center;
 }
 
 
@@ -128,18 +146,11 @@ Footer
 --------------------------------------------------------
 */
 
-footer:before {
-    content: "Footer: ";
-}
-
 footer {
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: darkgreen;
-    color: #FFF;
+    padding: 13px 0;
+    text-align: center;
+    background-color: #bfbfbf;
+    color: #222;
     font-family: "Helvetica";
 }
 
