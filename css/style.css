@@ -54,10 +54,25 @@ Grid Layout
 */
 
 .container {
-    max-width: 1000px;
+    max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+}
+
+.hero-container {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.hero-row .container {
+    padding: 20px 30px 40px 30px;
+    background-color: #FFF;
+    position: relative;
+    top: -50px;
+    z-index: 6;
 }
 
 
@@ -69,33 +84,41 @@ Header
 --------------------------------------------------------
 */
 
+header aside {
+    float: right;
+}
 
-/* Temp */
-
-
-/* Top Menu */
-
-#top-menu {
+header #logo-wrapper {
     float: left;
-    width: 100%;
 }
 
-#top-menu ul {
-    text-align: right;
-}
-
-#top-menu ul li {
+header aside ul {
     display: inline-block;
-    font-weight: bold;
-    font-size: 14px;
+    position: relative;
 }
 
-#top-menu ul li:not(:last-of-type) {
-    margin-right: 5px;
+header aside ul+ul {
+    margin-left: 30px;
+}
+
+header aside ul+ul:before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    background-color: #000;
+    margin: 0 10px;
+    position: absolute;
+    left: -28px;
+    top: -2px;
+}
+
+header aside ul li {
+    display: inline-block;
 }
 
 #logo img {
-    max-width: 200px;
+    max-width: 105px;
 }
 
 
@@ -105,7 +128,14 @@ header#site-header {
     padding: 10px 0;
     color: #222;
     font-family: "Helvetica";
-    background-color: #bfbfbf;
+    float: left;
+    width: 100%;
+}
+
+header#site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -122,6 +152,7 @@ nav#main-navigation ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 70px;
 }
 
 nav#main-navigation ul li {
@@ -168,6 +199,11 @@ p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+form {
+    background-color: #FFF;
+    padding: 50px 0;
+}
+
 
 /* 
 --------------------------------------------------------
@@ -180,7 +216,8 @@ Main
 main {
     background-color: #ebebeb;
     width: 100%;
-    min-height: 600px;
+    min-height: 1200px;
+    float: left;
 }
 
 main #slider {
@@ -197,4 +234,54 @@ main .three-articles {
     padding: 100px 0;
     color: #FFF;
     background-color: blue;
+}
+
+
+/* 
+--------------------------------------------------------
+
+Frontpage Specific Content
+
+--------------------------------------------------------
+*/
+
+#hero-frontpage {
+    padding: 170px 0 100px;
+    background-color: lightblue;
+    background-image: url('../images/hero-background-image.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    text-align: center;
+    position: relative;
+}
+
+#hero-frontpage:before {
+    content: "";
+    background-color: #000;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.2;
+    pointer-events: none;
+    z-index: 1;
+}
+
+#hero-search,
+nav#main-navigation {
+    position: relative;
+    z-index: 2;
+}
+
+#hero-search input {
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 24px;
+    outline: none;
+    box-shadow: none;
+    background-image: none;
+    border: none;
+    border: 1px solid #CCC;
 }
