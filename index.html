@@ -26,6 +26,7 @@
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
 
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -56,7 +57,7 @@
     <header id="site-header">
         <div class="container">
             <div id="logo-wrapper">
-                <a href="/" id="logo" title="Klik her for at gå til forsiden"><img src="images/cfa-logo.png" alt="Center for Autisme"></a>
+                <a href="/" id="logo" title="Klik her for at gå til forsiden"><img src="images/cfa-logo.png" alt="Center for Autisme">
             </div>
             <aside>
                 <ul>
@@ -65,7 +66,7 @@
 
                     </a></li>
                 </ul>
-                <ul id="social-media">
+                <ul class="social-media">
                     <li>
                         <a href="#" title=""><img src="images/icon/facebook-icon.png" alt="Icon of Facebook Social Media"></a>
                     </li>
@@ -83,11 +84,11 @@
         <div id="hero-frontpage">
             <!-- Great Search Frontpage -->
             <div class="container">
-                <form class="search" id="hero-search">
+                <form class="search animated fadeIn" id="hero-search">
                     <input type="text" placeholder="Søg" required />
                 </form>
                 <!-- Frontpage Navigation -->
-                <nav id="main-navigation">
+                <nav id="main-navigation" class="animated fadeIn delay-1s">
                     <div class="container">
                         <ul>
                             <li><a href="#" title="">Job &amp; uddannelse<br>Ungdomsuddannelse (STU)</a></li>
@@ -99,7 +100,7 @@
                 </nav>
             </div>
         </div>
-        <div class="hero-row" id="diagnose">
+        <div class="hero-row animated slideInUp delay-1s">
             <div class="container">
                 <div class="two-column">
                     <article>
@@ -127,8 +128,24 @@
                     <img src="images/hero-background-image.jpg" alt="Ny diagnose" />
                 </div>
             </div>
+
         </div>
 
+
+        <div id="newsletter">
+            <div class="container">
+                <h3>Ønsker du at modtage vores nyhedsbrev?</h3>
+                <p>Når du tilmelder dig vores nyhedsbrev, kan du forvente at modtage nyhedsbreve med indhold fra alle vores forskellige afdelinger her på Center for Autisme. Du vil altid have mulighed for at afmelde nyhedsbrevet, hvis det ikke har din interesse.</p>
+                <form>
+                    <div id="input-fields">
+                        <input type="email" name="email" placeholder="E-mail addresse" required />
+                        <input type="text" name="firstname" placeholder="Fornavn" required />
+                        <input type="text" name="lastname" placeholder="Efternavn" required />
+                    </div>
+                    <button type="submit">Tilmeld</button>
+                </form>
+            </div>
+        </div>
         <!-- Ny Diagnose Row -->
         <!-- STU Row -->
         <!-- Raadgivning Row -->
@@ -138,12 +155,31 @@
 
     <!-- Footer -->
     <footer>
-        Footer
-        <!-- Address Column -->
+        <div class="container">
+            <address>
+                <h4>Center for Autisme</h4>
+                Herlev Hovedgade 199
+                <br><br>2730 Herlev
+                <br><br>Fax: +45 44 98 23 53
+                <br><br>CVR-nr. 17 19 55 49
+            </address>
+            <img src="images/rutevejledning.jpg" alt="Rutevejledning for Center for Autismes addresse" />
+            <div id="rsv">
+                <a href="#" title=""><img src="images/rsv.png" alt="Registeret Socialøkonomisk Virksomhed" /></a>
+                <a href="#" title=""><img src="images/revi-it.png" alt="Erklæring fra uafhængig revisor" /></a>
+            </div>
+            <aside>
 
-        <!-- Shortcut Menu -->
-
-        <!-- Facebook Widget -->
+                <ul class="social-media">
+                    <li>
+                        <a href="#" title=""><img src="images/icon/facebook-icon.png" alt="Icon of Facebook Social Media"></a>
+                    </li>
+                    <li>
+                        <a href="#" title=""><img src="images/icon/linkedin-icon.png" alt="Icon of LinkedIn Social Media"></a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
     </footer>
 </body>
 
