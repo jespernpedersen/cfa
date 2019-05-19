@@ -86,6 +86,7 @@ Header
 
 header aside {
     float: right;
+    height: 100%;
 }
 
 header #logo-wrapper {
@@ -93,12 +94,15 @@ header #logo-wrapper {
 }
 
 header aside ul {
-    display: inline-block;
+    display: inline;
     position: relative;
+    height: 30px;
+    vertical-align: middle;
 }
 
 header aside ul+ul {
     margin-left: 30px;
+    height: 30px;
 }
 
 header aside ul+ul:before {
@@ -110,16 +114,21 @@ header aside ul+ul:before {
     margin: 0 10px;
     position: absolute;
     left: -28px;
-    top: -2px;
+    top: 0px;
 }
 
 header aside ul li {
     display: inline-block;
     font-size: 13px;
+    vertical-align: middle;
 }
 
 header aside ul li:not(:last-of-type) {
     margin-right: 12px;
+}
+
+header aside #social-media li:not(:last-of-type) {
+    margin-right: 1px;
 }
 
 header aside ul li a span {
@@ -132,6 +141,17 @@ header aside ul li a i {
     font-size: 15px;
     vertical-align: middle;
     margin-top: -2px;
+}
+
+header aside #social-media li img {
+    /* max-width: 35px; */
+    height: 32px;
+    width: auto;
+    vertical-align: middle;
+}
+
+#social-media a {
+    display: block;
 }
 
 #logo img {
