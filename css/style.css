@@ -330,6 +330,18 @@ Frontpage Specific Content
 .hero-row .container {
     padding: 40px 45px 40px 45px;
     background-color: #FFF;
+    position: relative;
+}
+
+.hero-row .container:after {
+    content: "";
+    background-color: #FFF;
+    position: absolute;
+    bottom: -50px;
+    height: 50px;
+    display: block;
+    width: 100%;
+    left: 0;
 }
 
 #hero-search,
