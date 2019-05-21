@@ -149,6 +149,7 @@ header aside ul+ul:before {
     position: absolute;
     left: -26px;
     top: 0px;
+    background-color: #000;
 }
 
 aside ul li {
@@ -381,8 +382,16 @@ h3 {
     font-weight: normal;
 }
 
+.education p+p {
+    margin-top: 15px;
+}
+
 .education h2 {
     border-color: var(--education);
+}
+
+.research h2 {
+    border-color: var(--research);
 }
 
 h3 {
@@ -398,7 +407,6 @@ p {
 }
 
 form#hero-search {
-    /* background-color: #FFF; */
     padding: 14px 0;
     border-radius: 104px;
 }
@@ -416,7 +424,7 @@ form#hero-search {
     right: 1.25rem;
     bottom: 0;
     -webkit-box-shadow: 0.125rem 0.75rem 1.25rem 0 rgba(158, 158, 158, 0.4);
-    /* box-shadow: 0.125rem 0.75rem 1.25rem 0 rgba(158,158,158,0.4); */
+    box-shadow: 0.125rem 0.75rem 1.25rem 0 rgba(158, 158, 158, 0.4);
     z-index: -1;
     -webkit-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
@@ -528,6 +536,49 @@ Frontpage Specific Content
     color: #222;
 }
 
+.hero-row .counsel .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    padding-right: 80px;
+}
+
+.research .container section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    padding-bottom: 40px;
+}
+
+.research .container section article {
+    display: flex;
+    flex-direction: column;
+    /* padding-bottom: 60px; */
+    position: relative;
+}
+
+.research .container section article .blog-image {
+    order: -2;
+}
+
+.research .container section article span {
+    order: -1;
+    margin: 8px 0;
+}
+
+.research .container section article h3 {
+    margin: 8px 0;
+    min-height: 70px;
+}
+
+.research .container section article .btn {
+    background-color: #FFF;
+    max-width: 139px;
+    position: absolute;
+    bottom: -55px;
+    margin-top: 0;
+}
+
 
 /* The ribbon */
 
@@ -627,6 +678,9 @@ main .two-column.img-first img {
     grid-column-start: 1;
     grid-row-start: 1;
 }
+
+
+/* Newsletter */
 
 #newsletter {
     background-color: #5d5d5d;
