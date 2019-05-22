@@ -378,12 +378,12 @@ h2 {
     padding-bottom: 9px;
 }
 
-h3 {
-    font-weight: normal;
+p+p {
+    margin-top: 15px;
 }
 
-.education p+p {
-    margin-top: 15px;
+h3 {
+    font-weight: normal;
 }
 
 .education h2 {
@@ -575,7 +575,7 @@ Frontpage Specific Content
     background-color: #FFF;
     max-width: 139px;
     position: absolute;
-    bottom: -55px;
+    bottom: -65px;
     margin-top: 0;
 }
 
