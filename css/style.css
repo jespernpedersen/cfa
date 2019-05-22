@@ -652,6 +652,10 @@ nav#main-navigation {
     width: 100%;
     max-width: 582px;
     margin-top: 60px;
+    background-image: url('../images/search-icon.png');
+    background-size: 18px auto;
+    background-repeat: no-repeat;
+    background-position: right 20px center;
 }
 
 main .two-column {
