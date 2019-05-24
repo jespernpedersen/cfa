@@ -12,15 +12,16 @@
     --counsel: rgb(227, 38, 38);
     --research: rgb(245, 153, 74);
     --bg: #bfbfbf;
+    --dark-bg: #333;
 }
 
 
 /* 
-	--------------------------------------------------------
+--------------------------------------------------------
 
-	FONTS
+Typography - Font Displays
 
-	--------------------------------------------------------
+--------------------------------------------------------
 */
 
 @font-face {
@@ -79,15 +80,6 @@ img {
 /* 
 --------------------------------------------------------
 
-Typography - Font Displays
-
---------------------------------------------------------
-*/
-
-
-/* 
---------------------------------------------------------
-
 Grid Layout
 
 --------------------------------------------------------
@@ -111,6 +103,124 @@ Grid Layout
 /* 
 --------------------------------------------------------
 
+Repeatable Elements
+
+--------------------------------------------------------
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'PFDinDisplayPro-Bold', Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 4px solid #A5988C;
+    padding-bottom: 9px;
+}
+
+p+p {
+    margin-top: 15px;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+.education h2 {
+    border-color: var(--education);
+}
+
+.network h2 {
+    border-color: var(--network);
+}
+
+.counsel h2 {
+    border-color: var(--counsel);
+}
+
+.research h2 {
+    border-color: var(--research);
+}
+
+h3 {
+    font-size: 20px;
+}
+
+body,
+p {
+    font-family: 'PFDinDisplayPro-Regular', Arial, Helvetica, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+}
+
+p a {
+    border-bottom: 1px solid #000;
+}
+
+.shaded {
+    position: relative;
+}
+
+.shaded:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 1.25rem;
+    right: 1.25rem;
+    bottom: 0;
+    -webkit-box-shadow: 0.125rem 0.75rem 1.25rem 0 rgba(158, 158, 158, 0.4);
+    box-shadow: 0.125rem 0.75rem 1.25rem 0 rgba(158, 158, 158, 0.4);
+    z-index: -1;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.btn {
+    display: inline-block;
+    padding: .875rem 1.5rem;
+    background-color: #ebebeb;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.call-to-action {
+    margin-top: 45px;
+    color: #FFF;
+    background-color: var(--education);
+    padding: 15px 45px;
+}
+
+.call-to-action p {
+    margin-top: 10px;
+    max-width: 700px;
+}
+
+.call-to-action .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.call-to-action a.btn {
+    margin: 0;
+    color: #000;
+}
+
+
+/* 
+--------------------------------------------------------
+
 Header
 
 --------------------------------------------------------
@@ -120,13 +230,13 @@ header {
     background-color: var(--bg);
 }
 
+header #logo-wrapper {
+    float: left;
+}
+
 header aside {
     float: right;
     height: 100%;
-}
-
-header #logo-wrapper {
-    float: left;
 }
 
 header aside ul {
@@ -156,6 +266,13 @@ aside ul li {
     display: inline-block;
     font-size: 13px;
     vertical-align: middle;
+}
+
+aside ul li a i {
+    margin-left: 7px;
+    font-size: 15px;
+    vertical-align: middle;
+    margin-top: -2px;
 }
 
 header aside ul li:not(:last-of-type) {
@@ -195,13 +312,6 @@ aside ul#contact-info li i {
     align-items: center;
     justify-content: center;
     margin-top: 1px;
-}
-
-aside ul li a i {
-    margin-left: 7px;
-    font-size: 15px;
-    vertical-align: middle;
-    margin-top: -2px;
 }
 
 aside .social-media li img {
@@ -325,9 +435,8 @@ Footer
 footer {
     padding: 50px 0;
     text-align: center;
-    background-color: #333;
+    background-color: var(--dark-bg);
     color: #FFF;
-    font-family: "Helvetica";
     float: left;
     width: 100%;
 }
@@ -356,110 +465,6 @@ footer #rsv a:not(:last-of-type) {
 /* 
 --------------------------------------------------------
 
-Repeatable Elements
-
---------------------------------------------------------
-*/
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'PFDinDisplayPro-Bold', Arial, Helvetica, sans-serif;
-}
-
-h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    border-bottom: 4px solid #A5988C;
-    padding-bottom: 9px;
-}
-
-p+p {
-    margin-top: 15px;
-}
-
-h3 {
-    font-weight: normal;
-}
-
-.education h2 {
-    border-color: var(--education);
-}
-
-.research h2 {
-    border-color: var(--research);
-}
-
-h3 {
-    font-size: 20px;
-}
-
-body,
-p {
-    font-family: 'PFDinDisplayPro-Regular', Arial, Helvetica, sans-serif;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-form#hero-search {
-    padding: 14px 0;
-    border-radius: 104px;
-}
-
-.shaded {
-    position: relative;
-}
-
-.shaded:before {
-    display: block;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 1.25rem;
-    right: 1.25rem;
-    bottom: 0;
-    -webkit-box-shadow: 0.125rem 0.75rem 1.25rem 0 rgba(158, 158, 158, 0.4);
-    box-shadow: 0.125rem 0.75rem 1.25rem 0 rgba(158, 158, 158, 0.4);
-    z-index: -1;
-    -webkit-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-
-.btn {
-    display: inline-block;
-    padding: .875rem 1.5rem;
-    background-color: #ebebeb;
-    margin-top: 20px;
-}
-
-.call-to-action {
-    margin-top: 45px;
-    color: #FFF;
-    background-color: var(--education);
-    padding: 15px 45px;
-}
-
-.call-to-action .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.call-to-action a.btn {
-    margin: 0;
-    color: #000;
-}
-
-
-/* 
---------------------------------------------------------
-
 Main
 
 --------------------------------------------------------
@@ -480,6 +485,11 @@ Frontpage Specific Content
 
 --------------------------------------------------------
 */
+
+form#hero-search {
+    padding: 14px 0;
+    border-radius: 104px;
+}
 
 #hero-frontpage {
     padding: 170px 0 100px;
@@ -523,7 +533,25 @@ Frontpage Specific Content
     overflow: hidden;
 }
 
-.counsel h2 {
+.counsel p a {
+    border-color: white;
+}
+
+.services ol {
+    list-style: none;
+}
+
+.services ol li {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #FFF;
+}
+
+.services ol li:last-of-type {
+    border-color: transparent;
+}
+
+.colored.counsel h2 {
     border-color: #FFF;
 }
 
@@ -536,7 +564,8 @@ Frontpage Specific Content
     color: #222;
 }
 
-.hero-row .counsel .container {
+.services section,
+.hero-row .counsel .container .counsel-primary {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 30px;
@@ -553,7 +582,6 @@ Frontpage Specific Content
 .research .container section article {
     display: flex;
     flex-direction: column;
-    /* padding-bottom: 60px; */
     position: relative;
 }
 
@@ -700,10 +728,9 @@ main .two-column.img-first img {
 #newsletter p {
     margin-bottom: 15px;
     color: #FFF;
-    max-width: 600px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 13px;
 }
 
 #input-fields {
@@ -711,13 +738,14 @@ main .two-column.img-first img {
 }
 
 #input-fields input {
-    padding: 7px 15px;
-    border-radius: 24px;
+    padding: .875rem 1.5rem;
     outline: none;
     box-shadow: none;
     background-image: none;
     border: none;
     border: 1px solid #CCC;
+    font-size: 16px;
+    font-family: 'PFDinDisplayPro-Regular', Arial, Helvetica, sans-serif;
 }
 
 #input-fields input:not(:last-of-type) {
@@ -725,11 +753,12 @@ main .two-column.img-first img {
 }
 
 #newsletter button {
-    padding: 10px 30px;
-    border-radius: 24px;
+    padding: .875rem 1.5rem;
     border: none;
     background-image: none;
     border: 1px solid #CCC;
+    font-size: 16px;
+    font-family: 'PFDinDisplayPro-Regular', Arial, Helvetica, sans-serif;
 }
 
 #newsletter button:hover {
