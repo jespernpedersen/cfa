@@ -391,36 +391,216 @@ nav#main-navigation ul>li:before {
     transform: translate(0, -50%);
 }
 
+nav#main-navigation ul>li a:hover {
+    cursor: pointer;
+}
+
+nav#main-navigation ul>li.menu-item-active,
 nav#main-navigation ul>li:hover {
     background-color: #000;
     color: #ebebeb;
 }
 
+nav#main-navigation ul>li:first-of-type.menu-item-active,
 nav#main-navigation ul>li:first-of-type:hover,
 nav#main-navigation ul>li:first-of-type:before {
     background-color: var(--education);
 }
 
+nav#main-navigation ul>li:nth-of-type(2).menu-item-active,
 nav#main-navigation ul>li:nth-of-type(2):hover,
 nav#main-navigation ul>li:nth-of-type(2):before {
     background-color: var(--network);
 }
 
+nav#main-navigation ul>li:nth-of-type(3).menu-item-active,
 nav#main-navigation ul>li:nth-of-type(3):hover,
 nav#main-navigation ul>li:nth-of-type(3):before {
     background-color: var(--counsel);
 }
 
+nav#main-navigation ul>li:nth-of-type(4).menu-item-active,
 nav#main-navigation ul>li:nth-of-type(4):hover,
 nav#main-navigation ul>li:nth-of-type(4):before {
     background-color: var(--research);
 }
 
+nav#main-navigation ul>li.menu-item-active:before,
 nav#main-navigation ul>li:first-of-type:hover:before,
 nav#main-navigation ul>li:nth-of-type(2):hover:before,
 nav#main-navigation ul>li:nth-of-type(3):hover:before,
 nav#main-navigation ul>li:nth-of-type(4):hover:before {
     background-color: #ebebeb;
+}
+
+.expanded-navigation {
+    position: absolute;
+    height: 100%;
+    background-color: #FFF;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+    color: #FFF;
+    padding: 19px 0;
+}
+
+.expanded-navigation>ul {
+    display: none;
+}
+
+.expanded-navigation.active {
+    opacity: 1 !important;
+    /* overwrite inline CSS */
+    pointer-events: all !important;
+    /* overwrite inline CSS */
+    height: 100% !important;
+    /* overwrite inline CSS */
+}
+
+.expanded-navigation>ul>li {
+    display: block;
+    width: calc(33% - 15px);
+    position: relative;
+    margin-right: 15px;
+    min-height: 11.35%;
+}
+
+.expanded-navigation>ul>li>.sub-menu {
+    padding-left: 30px;
+}
+
+.expanded-navigation>ul#network-navigation>li {
+    width: 100%;
+    margin-right: 0px;
+}
+
+.expanded-navigation #network-navigation>ul>li {
+    background-color: var(--education);
+}
+
+.expanded-navigation>ul>li a {
+    display: block;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.expanded-navigation>ul>li>ul.sub-menu a {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+
+/* Different Menus */
+
+.expanded-navigation.education {
+    background-color: var(--education);
+}
+
+.expanded-navigation.network {
+    background-color: var(--network);
+}
+
+.expanded-navigation.counsel {
+    background-color: var(--counsel);
+}
+
+.expanded-navigation.research {
+    background-color: var(--research);
+}
+
+
+/* End */
+
+.expanded-navigation>ul>li:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.expanded-navigation>ul>li:nth-of-type(even):before {
+    background-color: rgba(0, 0, 0, 0.09);
+}
+
+.expanded-navigation>ul>li:hover:nth-of-type(even):before {
+    background-color: transparent;
+}
+
+.expanded-navigation>ul>li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.expanded-navigation .column-height {
+    min-height: 100%;
+}
+
+.expanded-navigation .sub-menu li a {
+    padding-left: 7px;
+}
+
+.expanded-navigation .sub-menu li .sub-menu li a {
+    padding-left: 15px;
+}
+
+.expanded-navigation .sub-menu li a:before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    background-image: url('../images/arrow-icon.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+    margin-right: 7px;
+}
+
+.expanded-navigation>ul>li>.sub-menu>li:nth-of-type(odd) {
+    position: relative;
+}
+
+.expanded-navigation .sub-menu li a {
+    position: relative;
+    z-index: 2;
+    font-size: 13px;
+}
+
+.expanded-navigation>ul>li>.sub-menu>li:nth-of-type(odd):before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.1);
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.expanded-navigation>ul>li>.sub-menu>li:hover:nth-of-type(odd):before {
+    background-color: transparent;
+}
+
+.expanded-navigation>ul.active {
+    height: 100%;
+    float: left;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    flex-flow: column wrap;
+    align-content: baseline;
+    /* justify-content: center; */
 }
 
 
@@ -517,8 +697,13 @@ form#hero-search {
 
 .hero-row {
     position: relative;
-    top: -64px;
+    top: -54px;
+    transition: 0.3s ease-in-out;
     z-index: 6;
+}
+
+.hero-row.main-menu-active {
+    top: -89px;
 }
 
 .hero-row .education .container {
