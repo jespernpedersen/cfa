@@ -19,7 +19,6 @@ $(document).on("scroll", function() {
 
 jQuery(function() {
     jQuery("#main-navigation ul li a").click(function(e) {
-
         // Add Class to make element active, we will reset it first
         jQuery("#main-navigation ul li").removeClass("menu-item-active");
         jQuery(this).parent().addClass("menu-item-active");
@@ -81,5 +80,21 @@ jQuery(function() {
             mega_menu.addClass("research");
             jQuery("ul#research-navigation").addClass("active");
         }
+    });
+    jQuery("span.close-menu").click(function(e) {
+        // Reset Menu
+        jQuery(".expanded-navigation").removeClass("education");
+        jQuery(".expanded-navigation").removeClass("network");
+        jQuery(".expanded-navigation").removeClass("counsel");
+        jQuery(".expanded-navigation").removeClass("research");
+
+
+        jQuery("ul#education-navigation").removeClass("active");
+        jQuery("ul#network-navigation").removeClass("active");
+        jQuery("ul#counsel-navigation").removeClass("active");
+        jQuery("ul#research-navigation").removeClass("active");
+
+        jQuery("#main-navigation ul li").removeClass("menu-item-active");
+        jQuery(".hero-row").removeClass("main-menu-active");
     });
 });
