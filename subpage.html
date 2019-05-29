@@ -27,6 +27,7 @@
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/page.css">
     <link rel="stylesheet" href="css/animate.css">
 
     <!-- Favicon
@@ -53,7 +54,7 @@
     <meta name="theme-color" content="#4d94bf">
 </head>
 
-<body>
+<body class="education-category">
     <!-- Header -->
     <header id="site-header">
         <div class="container">
@@ -79,26 +80,19 @@
 
     <!-- Page Specific Content -->
     <main>
-        <!-- Frontpage Hero Section -->
-        <div id="hero-frontpage">
-            <!-- Great Search Frontpage -->
+
+        <!-- Navigation -->
+        <nav id="main-navigation" class="animated fadeIn delay-1s">
             <div class="container">
-                <form class="search animated fadeIn" id="hero-search">
-                    <input type="text" placeholder="Søg på termer eller emner..." required />
-                </form>
-                <!-- Frontpage Navigation -->
-                <nav id="main-navigation" class="animated fadeIn delay-1s">
-                    <div class="container">
-                        <ul>
-                            <li><a href="#main-navigation" title="" class="education-menu">Job &amp; uddannelse<br>Ungdomsuddannelse (STU)</a></li>
-                            <li><a href="#main-navigation" title="" class="network-menu">Netværksafdelingen</a></li>
-                            <li><a href="#main-navigation" title="" class="counsel-menu">Rådgivning, behandling, undersøgelser, kurser</a></li>
-                            <li><a href="#main-navigation" title="" class="research-menu">Forskning &amp; Udvikling</a></li>
-                        </ul>
-                    </div>
-                </nav>
+                <ul>
+                    <li><a href="#main-navigation" title="" class="education-menu">Job &amp; uddannelse<br>Ungdomsuddannelse (STU)</a></li>
+                    <li><a href="#main-navigation" title="" class="network-menu">Netværksafdelingen</a></li>
+                    <li><a href="#main-navigation" title="" class="counsel-menu">Rådgivning, behandling, undersøgelser, kurser</a></li>
+                    <li><a href="#main-navigation" title="" class="research-menu">Forskning &amp; Udvikling</a></li>
+                </ul>
             </div>
-        </div>
+        </nav>
+        <!-- Expanded Navigation -->
         <div class="hero-row animated slideInUp delay-1s">
             <div class="navigation-wrapper">
                 <div class="container">
@@ -190,143 +184,52 @@
                     </nav>
                 </div>
             </div>
-            <div class="education">
-                <div class="container shaded">
-                    <div class="row two-column">
-                        <article class="counsel">
-                            <h2>Når diagnosen er ny</h2>
-                            <div class="content">
-                                <p>At få stillet diagnosen autisme spektrum forstyrrelser ASF, kan være uoverskueligt for både den berørte borger, såvel som for de pårørende.</p>
-                                <p>Center for Autisme behandlingsindsats: Autismespektrumforstyrrelse er et livslangt handicap, og indsatsen bør derfor ses i et langsigtet perspektiv. </p>
-                                <p>En tidlig indsats, for et lille barn, har stor betydning.</p>
-                            </div>
-                            <a class="btn" href="#" title="">Læs mere her</a>
-                        </article>
-                        <article class="education">
-                            <h2>Særligt tilrettelagt ungdomsuddannelse</h2>
-                            <div class="content">
-                                <p>STU er muligheder for dig. Center for autisme STU, er en ungdomsuddannelse for autister og normaltbegavede unge med ASF, i alderen 16-25 år.
-                                </p>
-                                <p>CfAs bygger bro mellem skole og voksentilværelse, og forbereder den unge påbegynder videre uddannelse, arbejde eller anden beskæftigelse.</p>
-                                <p>Er du interesseret i en plads på vores STU, eller vil vide mere?</p>
-                                <p>Kontakt os på telefon <a href="callto:30708185">30 70 81 85</a> eller mail til <a href="mailto:lac@centerforautisme.dk">lac@centerforautisme.dk</a></p>
-                            </div>
-                            <a class="btn" href="#" title="">Læs mere her</a>
-                        </article>
-                    </div>
-                </div>
-            </div>
-
-            <section class="call-to-action">
-                <div class="container">
-                    <article>
-                        <h3>Samværs- og aktivitetstilbud (§104) for unge</h3>
-                        <p>Tilbuddet tilbyder aktiviteter, der ud over at give deltagerne indhold i deres dagligdag også giver dem mulighed for personlig udvikling og socialt samvær. Med ligesindede, i tydelige og strukturerede rammer.</p>
-                    </article>
-                    <a href="#" class="btn" title="">Læs mere her</a>
-                </div>
-            </section>
-
-            <div class="row colored counsel">
-                <div class="container">
-                    <div class="row counsel-primary">
-                        <article>
-                            <h2>Rådgivning</h2>
-                            <p>Center for Autisme tilbyder rådgivning indenfor autisme spektrum forstyrrelser ASF, både samtaler, herunder psykoedukation, behandling og rådgivning til forældre/pårørende til børn/unge. Derudover tilbyder vi også vejledning
-                                og supervision til professionelle, som arbejder med ASF.
-                            </p>
-                            <p>
-                                Kontakt os på <a href="callto:78100436">78 10 04 36</a> eller <a href="lkp@centerforautisme.dk">lkp@centerforautisme.dk </a></p>
-                            <a class="btn" href="#" title="">Læs mere her</a>
-                        </article>
-                        <figure>
-                            <img src="images/counsel-image.jpg" alt="Billede af vores rådgivning i Center for Autisme" title="Billede af vores rådgivning i Center for Autisme" />
-                        </figure>
-                        <span class="ribbon-shadow animation"><span class="ribbon"></span>
-                    </div>
-                    <div class="row services">
-                        <h2>Center for Autismes kurser</h2>
-                        <section>
-                            <article>
-                                <p>Vi afholder kurser inden for autisme. Vores oplægsholdere har stor erfaring og viden inden for autismeområdet. Vi formidler vores viden om autisme gennem inspirerende eksempler fra hverdagen, som medvirker til at skabe
-                                    forståelse for, hvad det betyder at have en autismespektrumforstyrrelse ASF.</p>
-                                <p>
-                                    Vi udbyder også skræddersyet undervisning, til lige netop din organisation
-                                </p>
-                                <a class="btn" href="#">Læs mere her</a>
-                            </article>
-                            <article>
-                                <ol>
-                                    <li><a href="#" title="">Møde vedr. gruppeforløb for forældre til døtre med ASF i alderen 11-14 år</a></li>
-                                    <li><a href="#" title="">Grundkursus om ASF - for fagpersoner</a></li>
-                                    <li><a href="#" title="">Angst og isolation, herunder skolevægring, hos børn, unge og voksne med ASF - for fagpersoner</a></li>
-                                    <li><a href="#" title="">Kursus om piger med en ASF diagnose - for forældre og fagpersoner</a></li>
-
-                                </ol>
-                                <a class="btn" href="#">Se flere kurser</a>
-                            </article>
-                        </section>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="row research">
-                <div class="container">
-                    <h2>Forskning &amp; Udvikling</h2>
-                    <section>
-                        <article>
-                            <h3>Integrering af normaltbegavede med autisme eller Aspergers syndrom på arbejdsmarkedet</h3>
-                            <a href="#" class="blog-image"><img src="images/blog-image-1.jpg" alt="" title="" /></a>
-                            <span>16. maj 2019</span>
-                            <p><em>Formål:</em> At undersøge, hvordan normaltbegavede voksne med autisme eller Aspergers syndrom klarer sig på arbejdsmarkedet, og hvilke styrker og svagheder der kan være ved integration på en arbejdsplads. </p>
-                            <p>Normaltbegavede personer med HFA/AS som via Erhvervstræningen har været ansat eller været i praktik på en arbejdsplads i mindst 3 måneder.</p>
-                            <a class="btn" href="#">Læs mere her</a>
-                        </article>
-                        <article>
-                            <h3>Musikterapi og autisme
-                            </h3>
-                            <a href="#" class="blog-image"><img src="images/blog-image-1.jpg" alt="" title="" /></a>
-                            <span>16. maj 2019</span>
-                            <p>v. Ulla Holck, ph.d., lektor med speciale i autisme samt leder af Center for Dokumentation og Forskning i Musikterapi, Aalborg Universitet.</p>
-
-                            <p>Mange børn, unge og voksne med autisme, deres pårørende samt fagpersoner har erfaret, at musikterapi kan gøre en forskel i forhold til sociale færdigheder, verbal og nonverbal kommunikation og følelsesmæssigt samspil. Musikterapi
-                                er således en evidensbaseret behandlingsform, vist gennem Cochrane Reviews og RCTundersøgelser – også ift. autisme.</p>
-
-                            <a class="btn" href="#">Læs mere her</a>
-                        </article>
-                        <article>
-                            <h3>Atypisk sensorisk adfærd hos børn med autisme
-
-                            </h3>
-                            <a href="#" class="blog-image"><img src="images/blog-image-1.jpg" alt="" title="" /></a>
-                            <span>16. maj 2019</span>
-                            <p>Psykolog Lise Ankerstrøm, BUC Gentofte har som led i sin specialistuddannelse i børneneuropsykologi skrevet en artikel om sensorisk processering hos børn med autisme.</p>
-
-                            <p> I artiklen laver hun status over, hvor man empirisk er i forhold til at dokumentere de sensoriske særligheder, børn med autisme oplever. De sensoriske afvigelser optræder - som noget nyt - i forslag til de nye diagnostiske
-                                kriterier for autismespektrum forstyrrelse i DSM-5.
-                            </p>
-                            <a class="btn" href="#">Læs mere her</a>
-                        </article>
-                    </section>
-                </div>
-            </div>
         </div>
-        <div id="newsletter">
+        <!-- Breadcrumb -->
+        <div id="breadcrumb">
             <div class="container">
-                <h3>Ønsker du at modtage vores nyhedsbrev?</h3>
-                <p>Når du tilmelder dig vores nyhedsbrev, kan du forvente at modtage nyhedsbreve med indhold fra alle vores forskellige afdelinger her på Center for Autisme. Du vil altid have mulighed for at afmelde nyhedsbrevet, hvis det ikke har din interesse.</p>
-                <form>
-                    <div id="input-fields">
-                        <input type="email" name="email" placeholder="E-mail addresse" required />
-                        <input type="text" name="firstname" placeholder="Fornavn" required />
-                        <input type="text" name="lastname" placeholder="Efternavn" required />
-                    </div>
-                    <button type="submit">Tilmeld</button>
-                </form>
+                <span>Level 1</span><span>Level 2</span><span>Level 3</span><span>Level 4</span>
             </div>
         </div>
+        <div id="subpage">
+            <div class="container">
+                <!-- Content -->
+                <!-- Category Navigation -->
+                <aside id="category-navigation" class="education-category">
+                    <h2>Job & Uddannelse<br>Ungdomsuddannelse (STU)</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="#" title="">Formål</a></li>
+                            <li><a href="#" title="">Målgruppe</a></li>
+                            <li class="has-sub-menu"><a href="#" title="">Visitation (optagelse)</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#" title="">Dine første 12 uger</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" title="">Kom og besøg os</a></li>
+                            <li class="has-sub-menu"><a href="#" title="">Fag og undervisning</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#" title="">Praktik i STU forløbet</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+                <!-- Main Content -->
+                <section id="content">
+                    <h1>Page Title</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit dolor mauris, at venenatis turpis sollicitudin eu. Proin accumsan enim at augue sagittis semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed tincidunt viverra neque, vitae volutpat metus tempor eu. Donec ante lorem, pretium eu auctor vel, sagittis ac ex. Etiam at mauris posuere erat blandit lobortis. Suspendisse ac odio quis dolor cursus consequat.</p>
 
+                    <p> Duis tincidunt eros a erat pharetra, nec feugiat tellus convallis. Ut nec pharetra eros, sit amet ullamcorper justo. Aenean consectetur in ante vitae elementum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                        inceptos himenaeos. Quisque ut leo nec metus lobortis mollis sed non ipsum. Sed in ligula tellus. Pellentesque eu enim maximus, ultrices orci vel, faucibus leo.</p>
+
+                    <p> Sed vel venenatis ante. Vivamus vitae nibh commodo, volutpat neque sit amet, cursus eros. Vivamus non mi non magna feugiat rhoncus non sit amet erat. Cras mattis bibendum sem sed maximus. Cras vel tempor sapien. Vestibulum facilisis
+                        leo vel quam facilisis gravida. Nullam mauris odio, molestie eget turpis et, blandit pulvinar nisi. Morbi gravida condimentum quam et gravida. Sed eget nisi eget metus ornare gravida. Duis tortor magna, rhoncus vitae enim in, facilisis
+                        euismod sem. Nunc orci erat, feugiat eget risus at, scelerisque gravida nibh. Quisque molestie ipsum eget orci maximus, et bibendum quam hendrerit.</p>
+                </section>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="container">

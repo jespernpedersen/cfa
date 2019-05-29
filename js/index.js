@@ -18,6 +18,7 @@ $(document).on("scroll", function() {
 
 
 jQuery(function() {
+
     jQuery("#main-navigation ul li a").click(function(e) {
         // Add Class to make element active, we will reset it first
         jQuery("#main-navigation ul li").removeClass("menu-item-active");
@@ -83,6 +84,8 @@ jQuery(function() {
     });
     jQuery("span.close-menu").click(function(e) {
         // Reset Menu
+
+        jQuery(".expanded-navigation").removeClass("active");
         jQuery(".expanded-navigation").removeClass("education");
         jQuery(".expanded-navigation").removeClass("network");
         jQuery(".expanded-navigation").removeClass("counsel");
@@ -97,4 +100,14 @@ jQuery(function() {
         jQuery("#main-navigation ul li").removeClass("menu-item-active");
         jQuery(".hero-row").removeClass("main-menu-active");
     });
+    $('a[href*="#"]').on('click', function(e) {
+        e.preventDefault()
+
+        $('html, body').animate({
+                scrollTop: $($(this).attr('href')).offset().top,
+            },
+            500,
+            'linear'
+        )
+    })
 });
