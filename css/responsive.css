@@ -1,0 +1,140 @@
+/* 
+	--------------------------------------------------------
+
+	Smaller desktops
+
+	--------------------------------------------------------
+*/
+
+@media screen and (max-width: 1280px) {
+    /* Layout */
+    .container {
+        max-width: 1025px;
+    }
+}
+
+
+/* 
+	--------------------------------------------------------
+
+	Landscape iPad (and other tablets)
+
+	--------------------------------------------------------
+*/
+
+@media screen and (max-width: 1024px) {
+    /* Layout */
+    .container {
+        max-width: 991px;
+    }
+    /* Header */
+    header#site-header {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    /* Frontpage */
+    #hero-frontpage {
+        padding: 0px 0 100px;
+    }
+    .call-to-action .container {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-column-gap: 30px;
+    }
+    .call-to-action a.btn {
+        max-width: 140px;
+    }
+    .hero-row .counsel .container {
+        padding: 0;
+    }
+    .services section {
+        padding-right: 0;
+    }
+    .counsel figure {
+        display: flex;
+        align-items: center;
+    }
+    .research .container section {
+        grid-template-columns: 1fr 1fr;
+    }
+    /* Navigation */
+    nav#main-navigation ul {
+        display: grid;
+        grid-column-gap: 30px;
+        grid-row-gap: 15px;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    nav#main-navigation ul li a {
+        padding: 8px 30px 8px 42px;
+        width: 100%;
+    }
+    nav#main-navigation ul li a span:before {
+        content: "/";
+    }
+    nav#main-navigation ul li a br {
+        /* display: none; */
+    }
+    /* Footer */
+    footer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+/* 
+	--------------------------------------------------------
+
+	Standing iPad (and other tablets)
+
+	--------------------------------------------------------
+*/
+
+@media screen and (max-width: 991px) {
+    /* Layout */
+    .container {
+        max-width: 768px;
+    }
+    #hero-search input {
+        margin-top: 0;
+    }
+}
+
+
+/* 
+	--------------------------------------------------------
+
+	Size between big mobile to standing iPad
+
+	--------------------------------------------------------
+*/
+
+@media screen and (min-width: 768px) and (max-width: 991px) {}
+
+
+/* 
+	--------------------------------------------------------
+
+	Mobile
+
+	--------------------------------------------------------
+*/
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+
+/* 
+	--------------------------------------------------------
+
+	Small Mobile (e.g. iPhone 4s)
+
+	--------------------------------------------------------
+*/
+
+@media screen and (max-width: 540px) {}

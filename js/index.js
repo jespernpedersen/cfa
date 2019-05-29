@@ -69,6 +69,7 @@ jQuery(function() {
             jQuery("ul#counsel-navigation").addClass("active");
         }
         if (jQuery(this).hasClass("research-menu")) {
+            console.log("Reset");
             // Reset
             jQuery("ul#education-navigation").removeClass("active");
             jQuery("ul#network-navigation").removeClass("active");
