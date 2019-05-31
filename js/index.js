@@ -16,71 +16,91 @@ $(document).on("scroll", function() {
     }
 });
 
+function menu() {
+
+    // Add Class to make element active, we will reset it first
+    jQuery("#main-navigation ul li").removeClass("menu-item-active");
+    jQuery(this).parent().addClass("menu-item-active");
+    jQuery(".hero-row").addClass("main-menu-active");
+
+    mega_menu = jQuery(".expanded-navigation");
+    // Show Wrapper
+    jQuery(mega_menu).addClass("active");
+}
+
+function education_menu() {
+    // Reset
+    jQuery("ul#network-navigation").removeClass("active");
+    jQuery("ul#counsel-navigation").removeClass("active");
+    jQuery("ul#research-navigation").removeClass("active");
+    mega_menu.removeClass("network");
+    mega_menu.removeClass("counsel");
+    mega_menu.removeClass("research");
+
+    // Add
+    mega_menu.addClass("education");
+    jQuery("ul#education-navigation").addClass("active");
+}
+
+function network_menu() {
+    // Reset
+    jQuery("ul#education-navigation").removeClass("active");
+    jQuery("ul#counsel-navigation").removeClass("active");
+    jQuery("ul#research-navigation").removeClass("active");
+    mega_menu.removeClass("education");
+    mega_menu.removeClass("counsel");
+    mega_menu.removeClass("research");
+
+    // Add
+    mega_menu.addClass("network");
+    jQuery("ul#network-navigation").addClass("active");
+}
+
+function counsel_menu() {
+    // Reset
+    jQuery("ul#education-navigation").removeClass("active");
+    jQuery("ul#network-navigation").removeClass("active");
+    jQuery("ul#research-navigation").removeClass("active");
+    mega_menu.removeClass("education");
+    mega_menu.removeClass("network");
+    mega_menu.removeClass("research");
+
+    // Add
+    mega_menu.addClass("counsel");
+    jQuery("ul#counsel-navigation").addClass("active");
+}
+
+function research_menu() {
+    // Reset
+    jQuery("ul#education-navigation").removeClass("active");
+    jQuery("ul#network-navigation").removeClass("active");
+    jQuery("ul#counsel-navigation").removeClass("active");
+    mega_menu.removeClass("education");
+    mega_menu.removeClass("network");
+    mega_menu.removeClass("counsel");
+
+    // Add
+    mega_menu.addClass("research");
+    jQuery("ul#research-navigation").addClass("active");
+}
+
 
 jQuery(function() {
 
     jQuery("#main-navigation ul li a").click(function(e) {
-        // Add Class to make element active, we will reset it first
-        jQuery("#main-navigation ul li").removeClass("menu-item-active");
-        jQuery(this).parent().addClass("menu-item-active");
-        jQuery(".hero-row").addClass("main-menu-active");
-
-        mega_menu = jQuery(".expanded-navigation");
-        // Show Wrapper
-        jQuery(mega_menu).addClass("active");
+        menu();
         // Show Specific Menu
         if (jQuery(this).hasClass("education-menu")) {
-            // Reset
-            jQuery("ul#network-navigation").removeClass("active");
-            jQuery("ul#counsel-navigation").removeClass("active");
-            jQuery("ul#research-navigation").removeClass("active");
-            mega_menu.removeClass("network");
-            mega_menu.removeClass("counsel");
-            mega_menu.removeClass("research");
-
-            // Add
-            mega_menu.addClass("education");
-            jQuery("ul#education-navigation").addClass("active");
+            education_menu();
         }
         if (jQuery(this).hasClass("network-menu")) {
-            // Reset
-            jQuery("ul#education-navigation").removeClass("active");
-            jQuery("ul#counsel-navigation").removeClass("active");
-            jQuery("ul#research-navigation").removeClass("active");
-            mega_menu.removeClass("education");
-            mega_menu.removeClass("counsel");
-            mega_menu.removeClass("research");
-
-            // Add
-            mega_menu.addClass("network");
-            jQuery("ul#network-navigation").addClass("active");
+            network_menu();
         }
         if (jQuery(this).hasClass("counsel-menu")) {
-            // Reset
-            jQuery("ul#education-navigation").removeClass("active");
-            jQuery("ul#network-navigation").removeClass("active");
-            jQuery("ul#research-navigation").removeClass("active");
-            mega_menu.removeClass("education");
-            mega_menu.removeClass("network");
-            mega_menu.removeClass("research");
-
-            // Add
-            mega_menu.addClass("counsel");
-            jQuery("ul#counsel-navigation").addClass("active");
+            counsel_menu();
         }
         if (jQuery(this).hasClass("research-menu")) {
-            console.log("Reset");
-            // Reset
-            jQuery("ul#education-navigation").removeClass("active");
-            jQuery("ul#network-navigation").removeClass("active");
-            jQuery("ul#counsel-navigation").removeClass("active");
-            mega_menu.removeClass("education");
-            mega_menu.removeClass("network");
-            mega_menu.removeClass("counsel");
-
-            // Add
-            mega_menu.addClass("research");
-            jQuery("ul#research-navigation").addClass("active");
+            research_menu();
         }
     });
     jQuery("span.close-menu").click(function(e) {

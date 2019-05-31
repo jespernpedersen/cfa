@@ -66,22 +66,6 @@ Featured Image
     left: 0;
 }
 
-body.education-category #featured-image:before {
-    background-color: var(--education);
-}
-
-body.network-category #featured-image:before {
-    background-color: var(--network);
-}
-
-body.counsel-category #featured-image:before {
-    background-color: var(--counsel);
-}
-
-body.research-category #featured-image:before {
-    background-color: var(--research);
-}
-
 
 /* 
 --------------------------------------------------------
@@ -189,6 +173,23 @@ h1 {
     padding-bottom: 9px;
     margin-bottom: 20px;
     font-size: 34px;
+}
+
+body.education-category #featured-image:before {
+    background-color: var(--education);
+}
+
+body.network-category #featured-image:before {
+    background-color: var(--network);
+}
+
+body.counsel-category #featured-image:before {
+    background-color: var(--counsel);
+    opacity: 0.5;
+}
+
+body.research-category #featured-image:before {
+    background-color: var(--research);
 }
 
 .education-category #category-navigation {
