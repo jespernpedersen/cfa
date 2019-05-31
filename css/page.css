@@ -104,6 +104,10 @@ Breadcrumb
     margin-right: 5px;
 }
 
+#breadcrumb span a {
+    border-bottom: 1px solid #FFF;
+}
+
 
 /* 
 --------------------------------------------------------
@@ -115,22 +119,6 @@ Category Navigation
 
 #category-navigation {
     color: #FFF;
-}
-
-.education-category #category-navigation {
-    background-color: var(--education);
-}
-
-.network-category #category-navigation {
-    background-color: var(--network);
-}
-
-.counsel-category #category-navigation {
-    background-color: var(--counsel);
-}
-
-.research-category #category-navigation {
-    background-color: var(--research);
 }
 
 #category-navigation h2 {
@@ -203,6 +191,34 @@ h1 {
     font-size: 34px;
 }
 
+.education-category #category-navigation {
+    background-color: var(--education);
+}
+
+.network-category #category-navigation {
+    background-color: var(--network);
+}
+
+.counsel-category #category-navigation {
+    background-color: var(--counsel);
+}
+
+.research-category #category-navigation {
+    background-color: var(--research);
+}
+
 body.education-category h1 {
     border-color: var(--education);
+}
+
+body.network-category h1 {
+    border-color: var(--network);
+}
+
+body.counsel-category h1 {
+    border-color: var(--counsel);
+}
+
+body.research-category h1 {
+    border-color: var(--research);
 }
