@@ -88,8 +88,13 @@ Breadcrumb
     margin-right: 5px;
 }
 
-#breadcrumb span a {
+#breadcrumb span a,
+#breadcrumb span span {
     border-bottom: 1px solid #FFF;
+}
+
+#breadcrumb span span:hover {
+    cursor: pointer;
 }
 
 
