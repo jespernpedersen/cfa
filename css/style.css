@@ -682,7 +682,7 @@ footer {
 
 footer .container {
     display: grid;
-    grid-template-columns: 1fr 2fr 1.2fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-column-gap: 15px;
 }
 
@@ -698,6 +698,10 @@ footer #rsv a {
 
 footer #rsv a:not(:last-of-type) {
     margin-right: 15px;
+}
+
+footer #rsv {
+    margin-bottom: 35px;
 }
 
 
