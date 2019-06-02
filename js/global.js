@@ -90,9 +90,22 @@ function research_menu() {
     jQuery("ul#research-navigation").addClass("active");
 }
 
+function search() {
+    jQuery(".search").click(function(e) {
+        jQuery("#search-wrapper").addClass("active");
+    });
+
+    jQuery(".close-search").click(function(e) {
+        jQuery("#search-wrapper").removeClass("active");
+    });
+}
+
+
 
 jQuery(function() {
     temporary_showcase_function();
+
+    search();
 
     jQuery("#main-navigation ul li a").click(function(e) {
         menu();
