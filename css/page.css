@@ -110,6 +110,10 @@ Category Navigation
     color: #FFF;
 }
 
+#category-navigation>div {
+    padding-bottom: 5px;
+}
+
 #category-navigation h2 {
     border-bottom: none;
     padding-bottom: 0;
@@ -197,34 +201,72 @@ body.research-category #featured-image:before {
     background-color: var(--research);
 }
 
-.education-category #category-navigation {
+.education-category #category-navigation>div {
     background-color: var(--education);
 }
 
-.network-category #category-navigation {
+.network-category #category-navigation>div {
     background-color: var(--network);
 }
 
-.counsel-category #category-navigation {
+.counsel-category #category-navigation>div {
     background-color: var(--counsel);
 }
 
-.research-category #category-navigation {
+.research-category #category-navigation>div {
     background-color: var(--research);
 }
 
-body.education-category h1 {
+body.education-category h1,
+body.education-category h2 {
     border-color: var(--education);
 }
 
-body.network-category h1 {
+body.network-category h1,
+body.network-category h2 {
     border-color: var(--network);
 }
 
-body.counsel-category h1 {
+body.counsel-category h1,
+body.counsel-category h2 {
     border-color: var(--counsel);
 }
 
-body.research-category h1 {
+body.research-category h1,
+body.research-category h2 {
     border-color: var(--research);
+}
+
+
+/* 
+--------------------------------------------------------
+
+Content
+
+--------------------------------------------------------
+*/
+
+#content h2 {
+    margin-top: 30px;
+}
+
+.course-catalog {
+    margin-top: 30px;
+}
+
+.course-catalog li {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.course-catalog li:not(:last-of-type) {
+    margin-right: 10px;
+}
+
+.course-catalog li a {
+    color: #FFF;
+    padding: 8px 15px;
+    background-color: var(--counsel);
+    border-radius: 32px;
+    display: block;
 }
