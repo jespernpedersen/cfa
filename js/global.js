@@ -7,15 +7,12 @@ function temporary_showcase_function() {
             window.location.replace("education-page.html");
         }
         if (jQuery(nav).hasClass("network")) {
-            console.log("Network");
             window.location.replace("network-page.html");
         }
         if (jQuery(nav).hasClass("counsel")) {
-            console.log("Counsel");
             window.location.replace("counsel-page.html");
         }
         if (jQuery(nav).hasClass("research")) {
-            console.log("Research");
             window.location.replace("research-page.html");
         }
     });

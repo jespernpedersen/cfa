@@ -829,7 +829,7 @@ form#hero-search {
 }
 
 .navigation-wrapper {
-    height: 500px;
+    height: 310px;
     max-height: 0;
     transition: 0.3s ease-in-out;
     transition-delay: 0.5s;
