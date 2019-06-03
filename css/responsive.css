@@ -1,234 +1,253 @@
-    /* 
+        /* 
 	--------------------------------------------------------
 
 	Smaller desktops
 
 	--------------------------------------------------------
 */
-    
-    @media screen and (max-width: 1280px) {
-        /* Layout */
-        .container {
-            max-width: 1025px;
+        
+        @media screen and (max-width: 1280px) {
+            /* Layout */
+            .container {
+                max-width: 1025px;
+            }
         }
-    }
-    /* 
+        /* 
 --------------------------------------------------------
 
 Landscape iPad (and other tablets)
 
 --------------------------------------------------------
 */
-    
-    @media screen and (max-width: 1024px) {
-        /* Layout */
-        .container {
-            max-width: 991px;
+        
+        @media screen and (max-width: 1024px) {
+            /* Layout */
+            .container {
+                max-width: 991px;
+            }
+            /* Header */
+            header#site-header {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            nav#main-navigation ul {
+                margin-top: 0;
+            }
+            /* Frontpage */
+            #hero-frontpage {
+                padding: 100px 0 100px;
+                background-position: top -179px center;
+            }
+            .call-to-action .container {
+                display: grid;
+                grid-template-columns: 3fr 1fr;
+                grid-column-gap: 30px;
+            }
+            .call-to-action a.btn {
+                max-width: 140px;
+            }
+            .hero-row .counsel .container {
+                padding: 0;
+            }
+            .services section {
+                padding-right: 0;
+            }
+            .counsel figure {
+                display: flex;
+                align-items: center;
+            }
+            .research .container section {
+                grid-template-columns: 1fr 1fr;
+            }
+            /* Navigation */
+            nav#main-navigation ul {
+                display: grid;
+                grid-column-gap: 30px;
+                grid-row-gap: 15px;
+                grid-template-columns: 1fr 1fr;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            nav#main-navigation ul li a {
+                padding: 8px 30px 8px 42px;
+                min-height: 50px;
+                width: 100%;
+            }
+            nav#main-navigation ul li a span:before {
+                content: "/";
+            }
+            /* Footer */
+            footer {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            #featured-image {
+                padding: 200px 0 10px;
+                background-position: top center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
         }
-        /* Header */
-        header#site-header {
-            padding-left: 30px;
-            padding-right: 30px;
-        }
-        nav#main-navigation ul {
-            margin-top: 0;
-        }
-        /* Frontpage */
-        #hero-frontpage {
-            padding: 100px 0 100px;
-            background-position: top -179px center;
-        }
-        .call-to-action .container {
-            display: grid;
-            grid-template-columns: 3fr 1fr;
-            grid-column-gap: 30px;
-        }
-        .call-to-action a.btn {
-            max-width: 140px;
-        }
-        .hero-row .counsel .container {
-            padding: 0;
-        }
-        .services section {
-            padding-right: 0;
-        }
-        .counsel figure {
-            display: flex;
-            align-items: center;
-        }
-        .research .container section {
-            grid-template-columns: 1fr 1fr;
-        }
-        /* Navigation */
-        nav#main-navigation ul {
-            display: grid;
-            grid-column-gap: 30px;
-            grid-row-gap: 15px;
-            grid-template-columns: 1fr 1fr;
-            padding-left: 30px;
-            padding-right: 30px;
-        }
-        nav#main-navigation ul li a {
-            padding: 8px 30px 8px 42px;
-            min-height: 50px;
-            width: 100%;
-        }
-        nav#main-navigation ul li a span:before {
-            content: "/";
-        }
-        /* Footer */
-        footer {
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-    }
-    /* 
+        /* 
 --------------------------------------------------------
 
 Standing iPad (and other tablets)
 
 --------------------------------------------------------
 */
-    
-    @media screen and (max-width: 991px) {
-        /* Layout */
-        .container {
-            max-width: 768px;
+        
+        @media screen and (max-width: 991px) {
+            /* Layout */
+            .container {
+                max-width: 768px;
+            }
+            #hero-search input {
+                margin-top: 0;
+            }
+            /* Footer */
+            footer .container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-row-gap: 30px;
+            }
         }
-        #hero-search input {
-            margin-top: 0;
-        }
-        /* Footer */
-        footer .container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-row-gap: 30px;
-        }
-    }
-    /* 
+        /* 
 --------------------------------------------------------
 
 Size between big mobile to standing iPad
 
 --------------------------------------------------------
 */
-    
-    @media screen and (min-width: 768px) and (max-width: 991px) {}
-    /* 
+        
+        @media screen and (min-width: 768px) and (max-width: 991px) {}
+        /* 
 --------------------------------------------------------
 
 Mobile
 
 --------------------------------------------------------
 */
-    
-    @media screen and (max-width: 768px) {
-        .container {
-            max-width: 100%;
-            padding-left: 30px;
-            padding-right: 30px;
+        
+        @media screen and (max-width: 768px) {
+            .container {
+                max-width: 100%;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            .call-to-action {
+                padding-left: 0;
+                padding-right: 0;
+            }
+            main .row {
+                padding: 40px 0px 40px 0px;
+            }
+            .hero-row .counsel .container {
+                padding: 0px 30px 0px 30px;
+            }
+            #newsletter button {
+                margin-top: 20px;
+            }
+            footer .container,
+            main .two-column,
+            .research .container section {
+                grid-template-columns: 1fr;
+            }
+            .call-to-action .container {
+                grid-template-columns: 2fr 1fr;
+            }
+            main .two-column,
+            .services section,
+            .hero-row .counsel .container .counsel-primary {
+                grid-row-gap: 30px;
+            }
+            .research .container section {
+                grid-row-gap: 100px;
+            }
+            footer address {
+                text-align: center;
+            }
+            .expanded-navigation>ul>li {
+                width: 100%;
+            }
+            aside ul#contact-info li a {
+                display: none;
+            }
+            header aside ul+ul:before {
+                display: none;
+            }
+            #hero-frontpage {
+                background-position: top center;
+                background-size: cover;
+            }
+            iframe {
+                max-width: 100%;
+            }
+            #input-fields input:not(:last-of-type) {
+                margin-right: 0;
+            }
+            #input-fields input {
+                width: calc(100% - 30px);
+                margin-bottom: 20px;
+            }
+            nav#main-navigation ul,
+            .services section,
+            .hero-row .counsel .container .counsel-primary {
+                grid-template-columns: 1fr;
+                padding-left: 0;
+                padding-right: 0;
+            }
+            .expanded-navigation>ul>li a {
+                font-size: 18px;
+            }
+            .expanded-navigation>ul>li>.sub-menu {
+                margin-left: 15px;
+            }
+            .expanded-navigation .column-height,
+            .expanded-navigation>ul>li {
+                min-height: unset;
+            }
+            .expanded-navigation>ul.active {
+                flex-flow: row wrap;
+            }
+            .hero-row.main-menu-active .navigation-wrapper {
+                max-height: 750px;
+                height: 750px;
+            }
+            #newsletter button {
+                margin-left: 0;
+            }
+            #subpage .container {
+                grid-template-columns: 1fr;
+                grid-row-gap: 30px;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 30px;
+            }
+            #featured-image {
+                padding: 20px 0 20px;
+                background-position: bottom center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
         }
-        .call-to-action {
-            padding-left: 0;
-            padding-right: 0;
-        }
-        main .row {
-            padding: 40px 0px 40px 0px;
-        }
-        .hero-row .counsel .container {
-            padding: 0px 30px 0px 30px;
-        }
-        #newsletter button {
-            margin-top: 20px;
-        }
-        footer .container,
-        main .two-column,
-        .research .container section {
-            grid-template-columns: 1fr;
-        }
-        .call-to-action .container {
-            grid-template-columns: 2fr 1fr;
-        }
-        main .two-column,
-        .services section,
-        .hero-row .counsel .container .counsel-primary {
-            grid-row-gap: 30px;
-        }
-        .research .container section {
-            grid-row-gap: 100px;
-        }
-        footer address {
-            text-align: center;
-        }
-        .expanded-navigation>ul>li {
-            width: 100%;
-        }
-        aside ul#contact-info li a {
-            display: none;
-        }
-        header aside ul+ul:before {
-            display: none;
-        }
-        #hero-frontpage {
-            background-position: top center;
-            background-size: cover;
-        }
-        iframe {
-            max-width: 100%;
-        }
-        #input-fields input:not(:last-of-type) {
-            margin-right: 0;
-        }
-        #input-fields input {
-            width: calc(100% - 30px);
-            margin-bottom: 20px;
-        }
-        nav#main-navigation ul,
-        .services section,
-        .hero-row .counsel .container .counsel-primary {
-            grid-template-columns: 1fr;
-            padding-left: 0;
-            padding-right: 0;
-        }
-        .expanded-navigation>ul>li a {
-            font-size: 18px;
-        }
-        .expanded-navigation>ul>li>.sub-menu {
-            margin-left: 15px;
-        }
-        .expanded-navigation .column-height,
-        .expanded-navigation>ul>li {
-            min-height: unset;
-        }
-        .expanded-navigation>ul.active {
-            flex-flow: row wrap;
-        }
-        .hero-row.main-menu-active .navigation-wrapper {
-            max-height: 750px;
-            height: 750px;
-        }
-        #newsletter button {
-            margin-left: 0;
-        }
-    }
-    /* 
+        /* 
 --------------------------------------------------------
 
 Small Mobile (e.g. iPhone 4s)
 
 --------------------------------------------------------
 */
-    
-    @media screen and (max-width: 540px) {
-        .container {
-            padding-left: 15px;
-            padding-right: 15px;
+        
+        @media screen and (max-width: 540px) {
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            ul.social-media {
+                display: none;
+            }
+            .call-to-action .container {
+                grid-template-columns: 1fr;
+                grid-row-gap: 20px;
+            }
         }
-        ul.social-media {
-            display: none;
-        }
-        .call-to-action .container {
-            grid-template-columns: 1fr;
-            grid-row-gap: 20px;
-        }
-    }
