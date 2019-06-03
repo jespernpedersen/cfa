@@ -348,11 +348,11 @@ div#search-inner {
 
 div#search-wrapper input {
     width: calc(100% - 40px);
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 15px;
     padding-right: 30px;
-    font-size: 24px;
+    font-size: 16px;
 }
 
 div#search-wrapper button {
@@ -809,7 +809,7 @@ form#hero-search {
     padding: 140px 0 100px;
     background-color: lightblue;
     background-image: url('../images/hero-background-image.jpg');
-    background-position: top -319px center;
+    background-position: top -239px center;
     background-repeat: no-repeat;
     background-size: 100% auto;
     text-align: center;
