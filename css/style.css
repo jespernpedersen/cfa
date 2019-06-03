@@ -321,6 +321,7 @@ div#search-wrapper {
     width: 100%;
     background-color: #FFF;
     z-index: 10;
+    left: 0;
     bottom: -72px;
     padding: 15px 0;
     border-top: 1px solid #CCC;
