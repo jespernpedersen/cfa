@@ -148,7 +148,7 @@ Mobile
                 margin-top: 20px;
             }
             footer .container,
-            main .two-column,
+            main .row.two-column,
             .research .container section {
                 grid-template-columns: 1fr;
             }
