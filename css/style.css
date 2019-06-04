@@ -551,7 +551,7 @@ nav#main-navigation ul>li:nth-of-type(4):hover:before {
 }
 
 .education article .content {
-    min-height: 180px;
+    min-height: 200px;
 }
 
 span.close-menu {
@@ -903,6 +903,12 @@ form#hero-search {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 30px;
     padding-right: 80px;
+    padding: 0;
+}
+
+.row.services {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .research .container section {
@@ -934,7 +940,6 @@ form#hero-search {
 
 .research .container section article .btn {
     background-color: #FFF;
-    max-width: 139px;
     position: absolute;
     bottom: -65px;
     margin-top: 0;
@@ -1029,6 +1034,11 @@ main .two-column {
 
 main .row {
     padding: 40px 45px 40px 45px;
+}
+
+main .row.heading {
+    padding-bottom: 0;
+    background-color: transparent;
 }
 
 main .two-column:not(:last-child) {
